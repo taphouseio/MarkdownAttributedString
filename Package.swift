@@ -5,6 +5,9 @@ import PackageDescription
 
 let package = Package(
     name: "MarkdownAttributedString",
+    platforms: [
+        .iOS(.v11), .macOS(.v10_14)
+    ],
     products: [
         .library(
             name: "MarkdownAttributedString",
@@ -14,6 +17,6 @@ let package = Package(
     targets: [
         .target(
             name: "MarkdownAttributedString",
-            dependencies: []),
+            dependencies: [])
     ]
 )
